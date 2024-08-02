@@ -1,0 +1,13 @@
+Feature: User Sign-up and Login
+
+Scenario: User signs up
+  Given I am on the sign-up page
+  When I fill in the sign-up form with valid details
+  And I submit the sign-up form
+  Then I should see a confirmation message
+
+Scenario: User logs in
+  Given I am on the login page
+  When I fill in the login form with valid credentials
+  And I submit the login form
+  Then I should be logged in successfully
